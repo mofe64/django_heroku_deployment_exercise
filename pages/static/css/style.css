@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header-right {
+    font-size: 2rem;
+}
+.header-right a {
+     text-decoration: none;
+    color: black;
+    padding-left: .5rem;
+}
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.books {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 22%;
+    height: 500px;
+    margin-right: 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+.card-image {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-body {
+    padding: 1rem;
+}
+.card-body h1 {
+    font-size: 1.5rem;
+}
+.card-body button {
+    border: none;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: dodgerblue;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+.card-body button a {
+    text-decoration: none;
+    color: white;
+}

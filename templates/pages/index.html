@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-    <p>Home page</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Featured Books</h1>
+    <div class="books">
+        {% for book in featured_books %}
+            <div class="card">
+            <div class="card-image">
+                 <img src="{{ book.coverImage.url }}">
+            </div>
+            <div class="card-body">
+                <h1>{{ book.title }}</h1>
+                <p>{{ book.author }}</p>
+                <button>
+                    <a href="{{ book.book_file.url }}">
+                        Download
+                    </a>
+                </button>
+            </div>
+
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

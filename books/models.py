@@ -9,6 +9,7 @@ class Book(models.Model):
     coverImage = models.ImageField(upload_to='book_covers')
     date_listed = models.DateField(auto_now_add=True)
     is_featured = models.BooleanField(default=False)
+    book_file = models.FileField(upload_to='book_files')
 
     def __str__(self):
         return self.title
